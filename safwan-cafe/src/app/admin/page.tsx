@@ -6,7 +6,7 @@ import { ArrowRight, Lock, Settings, Plus, Edit2, Trash2, BarChart3, DollarSign 
 import { supabase, MenuItem } from '@/lib/supabase'
 import toast, { Toaster } from 'react-hot-toast'
 
-export default function AdminPage() {
+function AdminPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
   const [password, setPassword] = useState('')
   const [menuItems, setMenuItems] = useState<MenuItem[]>([])
@@ -534,3 +534,5 @@ export default function AdminPage() {
     </div>
   )
 }
+
+export default AdminPage;

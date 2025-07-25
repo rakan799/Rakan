@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Remove output export for Vercel deployment
+  reactStrictMode: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
