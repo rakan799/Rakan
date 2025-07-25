@@ -6,7 +6,7 @@ import { ArrowRight, Coffee, ShoppingCart, CreditCard, Trash2, Plus, Minus } fro
 import { supabase, MenuItem, TableOrder, OrderItem } from '@/lib/supabase'
 import toast, { Toaster } from 'react-hot-toast'
 
-export default function TablesPage() {
+function TablesPage() {
   const [selectedTable, setSelectedTable] = useState<number | null>(null)
   const [menuItems, setMenuItems] = useState<MenuItem[]>([])
   const [currentOrder, setCurrentOrder] = useState<OrderItem[]>([])
@@ -497,3 +497,5 @@ export default function TablesPage() {
     </div>
   )
 }
+
+export default TablesPage;

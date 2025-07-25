@@ -6,7 +6,7 @@ import { ArrowRight, Calendar, Clock, Users, Mail, Phone, Coffee } from 'lucide-
 import { supabase } from '@/lib/supabase'
 import toast, { Toaster } from 'react-hot-toast'
 
-export default function ReservationPage() {
+function ReservationPage() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -357,3 +357,5 @@ export default function ReservationPage() {
     </div>
   )
 }
+
+export default ReservationPage;
